@@ -10,11 +10,11 @@ projects that is a starting point for:
 - incremental testing
 - uniform and easy building of Coq projects
 
-Coq Universe takes inspiration from the (Dune
-Universe)[https://github.com/dune-universe/dune-universe] and
-(opam-monorepo)[https://github.com/ocamllabs/opam-monorepo], the (Dune
-build system)[https://github.com/ocaml/dune], and Isabelle's (Archive
-of Formal Proofs)[https://www.isa-afp.org/].
+Coq Universe takes inspiration from the [Dune
+Universe](https://github.com/dune-universe/dune-universe) and
+[opam-monorepo](https://github.com/ocamllabs/opam-monorepo), the [Dune
+build system](https://github.com/ocaml/dune), and Isabelle's [Archive
+of Formal Proofs](https://www.isa-afp.org/).
 
 Coq Universe is developed by Ali Caglayan, Emilio J. Gallego Arias,
 and Thomas Binetruy-Pic.
