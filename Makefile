@@ -10,7 +10,7 @@ $(DUNE):
 	cd dune-ocaml && dune build --root . $(DUNE_BIN)
 
 universe: $(DUNE)
-	$(DUNE) build @install
+	$(DUNE) build @install --display=short
 
 clean:
 	cd dune-ocaml && dune clean --root .

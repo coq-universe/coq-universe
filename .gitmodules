@@ -10,3 +10,7 @@
 	path = coq-master
 	url = https://github.com/coq/coq.git
 	branch = master
+[submodule "odd-order"]
+	path = odd-order
+	url = https://github.com/ejgallego/odd-order.git
+	branch = dune
