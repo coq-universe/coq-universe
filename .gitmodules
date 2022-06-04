@@ -26,3 +26,6 @@
 	path = CompCert
 	url = https://github.com/ejgallego/CompCert.git
 	branch = dune
+[submodule "HoTT"]
+	path = HoTT
+	url = https://github.com/Alizter/HoTT.git
