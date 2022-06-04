@@ -27,9 +27,12 @@ jobs:
         with:
           ocaml-compiler: ${{ matrix.ocaml-compiler }}
 
-      - name: Fetch submodules
+      - name: 🏜️ Install Dune
+        run: opam install dune -y
+
+      - name: 🧱 Fetch submodules
         run: make submodules
 
-      - name: 🐓 make Coq Universe 🌌
+      - name: 🐓 Coq Universe 🌌
         run: make universe
 

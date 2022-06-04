@@ -33,7 +33,7 @@ After downloading the repository, fetch all the sources for the submodules using
 make submodules
 ```
 
-afterwards build everything (only OCaml is required!) using
+afterwards build everything (only OCaml and Dune are required!) using
 ```
 make universe
 ```
