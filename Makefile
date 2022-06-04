@@ -5,6 +5,7 @@ DUNE=dune-ocaml/$(DUNE_BIN)
 
 help:
 	@echo "Welcome to Coq Universe, do 'make universe' to build"
+	@echo "If the submodules are not fetched, first do 'make submodules'"
 
 $(DUNE):
 	cd dune-ocaml && dune build --root . $(DUNE_BIN)
