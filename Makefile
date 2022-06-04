@@ -1,4 +1,4 @@
-.PHONY: help clean
+.PHONY: help clean submodules
 
 DUNE_BIN=_build/install/default/bin/dune
 DUNE=dune-ocaml/$(DUNE_BIN)
@@ -11,6 +11,9 @@ $(DUNE):
 
 universe: $(DUNE)
 	$(DUNE) build @install --display=short
+
+submodules:
+	git submodule update --init --recursive 
 
 clean:
 	cd dune-ocaml && dune clean --root .
