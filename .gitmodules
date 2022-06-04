@@ -14,3 +14,7 @@
 	path = odd-order
 	url = https://github.com/ejgallego/odd-order.git
 	branch = dune
+[submodule "fourcolor"]
+	path = fourcolor
+	url = https://github.com/ejgallego/fourcolor.git
+	branch = dune
