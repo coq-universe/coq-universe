@@ -29,3 +29,6 @@
 [submodule "HoTT"]
 	path = HoTT
 	url = https://github.com/Alizter/HoTT.git
+[submodule "Coq-Equations"]
+	path = Coq-Equations
+	url = https://github.com/mattam82/Coq-Equations.git
