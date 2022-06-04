@@ -29,6 +29,11 @@
 [submodule "HoTT"]
 	path = HoTT
 	url = https://github.com/Alizter/HoTT.git
+  branch = use-dune
 [submodule "Coq-Equations"]
 	path = Coq-Equations
-	url = https://github.com/mattam82/Coq-Equations.git
+	url = https://github.com/alizter/Coq-Equations.git
+  branch = dune
+[submodule "lib/menhir"]
+	path = lib/menhir
+	url = https://github.com/LexiFi/menhir.git

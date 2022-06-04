@@ -11,10 +11,10 @@ $(DUNE):
 	cd dune-ocaml && dune build --root . $(DUNE_BIN)
 
 universe: $(DUNE)
-	$(DUNE) build @install --display=short
+	$(DUNE) build @install --display=short --error-reporting=twice
 
 submodules:
-	git submodule update --init --recursive 
+	git submodule update --init --recursive
 
 clean:
 	cd dune-ocaml && dune clean --root .
