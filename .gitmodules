@@ -18,3 +18,7 @@
 	path = fourcolor
 	url = https://github.com/ejgallego/fourcolor.git
 	branch = dune
+[submodule "flocq"]
+	path = flocq
+	url = https://github.com/ejgallego/flocq.git
+	branch = dune
