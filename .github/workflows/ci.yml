@@ -33,8 +33,5 @@ jobs:
       - name: Install 🏜️ Dune, 🔍 ocamlfind and 💤 zarith
         run: opam install dune ocamlfind zarith
 
-      - name: 🐓 Install Coq dependencies
-        run: opam install
-
       - name: 🌌 Coq Universe
         run: opam exec -- make universe
