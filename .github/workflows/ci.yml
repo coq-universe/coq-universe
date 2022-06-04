@@ -28,7 +28,9 @@ jobs:
           ocaml-compiler: ${{ matrix.ocaml-compiler }}
 
       - name: 🏜️ Install Dune
-        run: opam install dune -y
+        run:
+          opam install dune -y
+          eval $(opam env)
 
       - name: 🧱 Fetch submodules
         run: make submodules
