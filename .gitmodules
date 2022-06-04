@@ -22,3 +22,7 @@
 	path = flocq
 	url = https://github.com/ejgallego/flocq.git
 	branch = dune
+[submodule "CompCert"]
+	path = CompCert
+	url = https://github.com/ejgallego/CompCert.git
+	branch = dune
