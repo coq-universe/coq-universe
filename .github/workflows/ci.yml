@@ -31,7 +31,7 @@ jobs:
         run: make submodules
 
       - name: 🐓 Install Coq dependencies
-        run: opam install dune ./coq-master/coq.opam --deps-only
+        run: opam install dune ./coq-master/coq-core.opam --deps-only
 
       - name: 🌌 Coq Universe
         run: opam exec -- make universe
