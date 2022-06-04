@@ -13,4 +13,5 @@ universe: $(DUNE)
 	$(DUNE) build @install
 
 clean:
+	cd dune-ocaml && dune clean --root .
 	dune clean
