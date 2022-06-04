@@ -1,5 +1,7 @@
 # Welcome to the Coq Universe Project!
 
+[![CI](https://github.com/ejgallego/coq-universe/actions/workflows/ci.yml/badge.svg)](https://github.com/ejgallego/coq-universe/actions/workflows/ci.yml)
+
 ## Introduction and Goals
 
 Coq Universe aims to provide a composed build of all active Coq projects that is
