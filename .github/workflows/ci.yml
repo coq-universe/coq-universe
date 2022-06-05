@@ -34,15 +34,15 @@ jobs:
           dune-cache: false
           opam-depext: true
 
-      - name: 🧱 Fetch submodules
-        run: make submodules
-
       - name: 🐐 Install GMP
         if: matrix.os == 'windows-latest'
         run: opam depext conf-gmp
 
-      - name: Install 🔍 ocamlfind and 💤 zarith
+      - name: Install 🔍 ocamlfind, 💤 zarith and 🗿 menhir
         run: opam install ocamlfind zarith
+
+      - name: 🧱 Fetch submodules
+        run: make submodules
 
       - name: 🌌 Coq Universe
         run: opam exec -- make universe

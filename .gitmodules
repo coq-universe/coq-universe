@@ -34,9 +34,6 @@
 	path = Coq-Equations
 	url = https://github.com/alizter/Coq-Equations.git
   branch = dune
-[submodule "lib/menhir"]
-	path = lib/menhir
-	url = https://github.com/LexiFi/menhir.git
 [submodule "hydra-battles"]
 	path = hydra-battles
 	url = https://github.com/Alizter/hydra-battles.git
