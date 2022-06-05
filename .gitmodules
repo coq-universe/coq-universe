@@ -37,3 +37,22 @@
 [submodule "lib/menhir"]
 	path = lib/menhir
 	url = https://github.com/LexiFi/menhir.git
+[submodule "hydra-battles"]
+	path = hydra-battles
+	url = git@github.com:Alizter/hydra-battles.git
+  branch = dune
+[submodule "mczify"]
+	path = mczify
+	url = git@github.com:math-comp/mczify.git
+  branch = dune
+[submodule "paramcoq"]
+	path = paramcoq
+	url = git@github.com:Alizter/paramcoq.git
+[submodule "gaia"]
+	path = gaia
+	url = git@github.com:Alizter/gaia.git
+  branch = dune
+[submodule "LibHyps"]
+	path = LibHyps
+	url = git@github.com:Alizter/LibHyps.git
+  branch = dune
