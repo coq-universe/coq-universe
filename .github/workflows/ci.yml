@@ -34,6 +34,10 @@ jobs:
       - name: 🧱 Fetch submodules
         run: make submodules
 
+      - name: 🐐 Install GMP
+        if: matrix.os == 'windows-latest'
+        run: opam depext conf-gmp
+
       - name: Install 🏜️ Dune, 🔍 ocamlfind and 💤 zarith
         run: opam install dune ocamlfind zarith
 
