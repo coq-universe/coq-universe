@@ -1,6 +1,6 @@
 .PHONY: help clean submodules
 
-DUNE_BIN=_build/install/default/bin/dune
+DUNE_BIN=_build/install/default/bin/dune.exe
 DUNE=dune-ocaml/$(DUNE_BIN)
 
 help:
