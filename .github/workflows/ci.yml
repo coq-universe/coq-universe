@@ -39,7 +39,7 @@ jobs:
         run: opam depext conf-gmp
 
       - name: Install 🔍 ocamlfind, 💤 zarith and 🗿 menhir
-        run: opam install ocamlfind zarith
+        run: make install-opam-deps
 
       - name: 🧱 Fetch submodules
         run: make submodules
