@@ -24,7 +24,7 @@
 	branch = dune
 [submodule "CompCert"]
 	path = CompCert
-	url = https://github.com/ejgallego/CompCert.git
+	url = https://github.com/alizter/CompCert.git
 	branch = dune
 [submodule "HoTT"]
 	path = HoTT
