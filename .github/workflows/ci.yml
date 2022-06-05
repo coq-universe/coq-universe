@@ -29,6 +29,7 @@ jobs:
         with:
           ocaml-compiler: ${{ matrix.ocaml-compiler }}
           dune-cache: true
+          opam-depext: true
 
       - name: 🧱 Fetch submodules
         run: make submodules
