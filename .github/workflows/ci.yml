@@ -41,8 +41,8 @@ jobs:
         if: matrix.os == 'windows-latest'
         run: opam depext conf-gmp
 
-      - name: Install 🏜️ Dune, 🔍 ocamlfind and 💤 zarith
-        run: opam install dune ocamlfind zarith
+      - name: Install 🔍 ocamlfind and 💤 zarith
+        run: opam install ocamlfind zarith
 
       - name: 🌌 Coq Universe
         run: opam exec -- make universe

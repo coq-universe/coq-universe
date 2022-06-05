@@ -1,24 +1,29 @@
-.PHONY: help clean submodules
+.PHONY: $(DUNE) help clean submodules
 
-DUNE_BIN=_build/install/default/bin/dune.exe
-DUNE=dune-ocaml/$(DUNE_BIN)
+#
+# This build works without dune being installed. In order for this to work, we
+# use the bootstrapping mechanism in the build of dune.
+#
+
+DUNE_EXE=dune-ocaml/dune.exe
+DUNE=$(DUNE_EXE) exec --root dune-ocaml -- dune
 
 help:
 	@echo "Welcome to Coq Universe, do 'make universe' to build"
 	@echo "If the submodules are not fetched, first do 'make submodules'"
 
-$(DUNE):
-	cd dune-ocaml && dune build --root . $(DUNE_BIN)
+$(DUNE_EXE):
+	make -C dune-ocaml dune.exe
 
-universe: $(DUNE)
+universe: $(DUNE_EXE)
 	$(DUNE) build @install --display=short --error-reporting=twice
 
-dune: $(DUNE)
+dune: $(DUNE_EXE)
 	$(DUNE) $(ARGS)
 
 submodules:
 	git submodule update --init --recursive
 
-clean:
-	cd dune-ocaml && dune clean --root .
-	dune clean
+clean: $(DUNE_EXE)
+	$(DUNE) clean
+	$(DUNE_EXE) clean --root dune-ocaml
