@@ -20,7 +20,7 @@
 	branch = dune
 [submodule "flocq"]
 	path = flocq
-	url = https://github.com/ejgallego/flocq.git
+	url = https://github.com/alizter/flocq-fork.git
 	branch = dune
 [submodule "CompCert"]
 	path = CompCert
