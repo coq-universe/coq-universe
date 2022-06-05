@@ -13,6 +13,9 @@ $(DUNE):
 universe: $(DUNE)
 	$(DUNE) build @install --display=short --error-reporting=twice
 
+dune: $(DUNE)
+	$(DUNE) $(ARGS)
+
 submodules:
 	git submodule update --init --recursive
 
