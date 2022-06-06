@@ -65,3 +65,11 @@
 	path = bigenough
 	url = https://github.com/Alizter/bigenough.git
   branch = dune
+[submodule "multinomials"]
+	path = multinomials
+	url = https://github.com/Alizter/multinomials.git
+  branch = dune
+[submodule "finmap"]
+	path = finmap
+	url = https://github.com/Alizter/finmap.git
+  branch = dune
