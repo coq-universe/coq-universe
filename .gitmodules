@@ -53,3 +53,15 @@
 	path = LibHyps
 	url = https://github.com/Alizter/LibHyps.git
   branch = dune
+[submodule "Abel"]
+	path = Abel
+	url = https://github.com/Alizter/Abel.git
+  branch = dune
+[submodule "real-closed"]
+	path = real-closed
+	url = https://github.com/math-comp/real-closed.git
+  branch = dune
+[submodule "bigenough"]
+	path = bigenough
+	url = https://github.com/Alizter/bigenough.git
+  branch = dune
