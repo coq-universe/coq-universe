@@ -23,8 +23,10 @@ help:
 $(DUNE):
 	cd dune-ocaml && make release
 
+# For interactive use
+DUNEOPT?=--display=short --error-reporting=twice
 universe: $(DUNE)
-	$(DUNE) build @install --display=short --error-reporting=twice
+	$(DUNE) build @install $(DUNEOPT)
 
 dune: $(DUNE)
 	$(DUNE) $(ARGS)
