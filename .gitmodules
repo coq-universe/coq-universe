@@ -73,3 +73,7 @@
 	path = finmap
 	url = https://github.com/Alizter/finmap.git
   branch = dune
+[submodule "tarjan"]
+	path = tarjan
+	url = https://github.com/Alizter/tarjan.git
+  branch = dune
