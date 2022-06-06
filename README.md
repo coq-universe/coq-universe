@@ -21,6 +21,8 @@ Coq Universe takes inspiration from the following projects:
 Coq Universe is developed by Ali Caglayan, Emilio J. Gallego Arias, and Thomas
 Binetruy-Pic.
 
+Feel free to stop by our [Zulip stream](https://coq.zulipchat.com/#narrow/stream/327010-Coq-Universe) to discuss about this project.
+
 ## Components
 
 Coq Universe is built using Dune, and for now, aims to include projects present
