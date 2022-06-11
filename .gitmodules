@@ -77,3 +77,6 @@
 	path = tarjan
 	url = https://github.com/Alizter/tarjan.git
   branch = dune
+[submodule "elpi"]
+	path = elpi
+	url = git@github.com:LPCIC/elpi.git
