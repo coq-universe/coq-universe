@@ -14,7 +14,10 @@ DUNE=./dune-ocaml/_build/install/default/bin/dune$(EXE)
 OPAM_DEPS=\
 	ocamlfind \
 	zarith \
-	menhir
+	menhir \
+	conf-findutilsbuild \
+	lablgtk3-sourceview3>=3.1.2 \
+	conf-adwaita-icon-theme \
 
 help:
 	@echo "Welcome to Coq Universe, do 'make universe' to build"

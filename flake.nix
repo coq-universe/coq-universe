@@ -15,6 +15,12 @@
           ocamlPackages.findlib
           ocamlPackages.zarith
           ocamlPackages.menhir
+
+          # Needed for CoqIDE
+          ocamlPackages.lablgtk3-sourceview3
+          glib
+          gnome.adwaita-icon-theme
+          wrapGAppsHook
         ];
       };
     };
