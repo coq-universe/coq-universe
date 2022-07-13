@@ -8,7 +8,7 @@
 	branch = dune
 [submodule "coq-master"]
 	path = coq-master
-	url = https://github.com/coq/coq.git
+	url = https://github.com/ejgallego/coq.git
 	branch = master
 [submodule "odd-order"]
 	path = odd-order
@@ -32,11 +32,11 @@
   branch = use-dune
 [submodule "Coq-Equations"]
 	path = Coq-Equations
-	url = https://github.com/alizter/Coq-Equations.git
+	url = https://github.com/ejgallego/Coq-Equations.git
   branch = dune
 [submodule "hydra-battles"]
 	path = hydra-battles
-	url = https://github.com/Alizter/hydra-battles.git
+	url = https://github.com/ejgallego/hydra-battles.git
   branch = dune
 [submodule "mczify"]
 	path = mczify
@@ -44,7 +44,7 @@
   branch = dune
 [submodule "paramcoq"]
 	path = paramcoq
-	url = https://github.com/Alizter/paramcoq.git
+	url = https://github.com/ejgallego/paramcoq.git
 [submodule "gaia"]
 	path = gaia
 	url = https://github.com/Alizter/gaia.git
