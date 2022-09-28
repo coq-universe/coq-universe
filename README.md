@@ -11,6 +11,7 @@ a starting point for:
 - proof mining and exploration
 - incremental testing
 - uniform and easy building of Coq projects
+- reproducible builds
 
 Coq Universe takes inspiration from the following projects:
 - [Dune Universe](https://github.com/dune-universe/dune-universe)
@@ -18,15 +19,15 @@ Coq Universe takes inspiration from the following projects:
 - [Dune build system](https://github.com/ocaml/dune)
 - [Isabelle's Archive of Formal Proofs](https://www.isa-afp.org/)
 
-Coq Universe is developed by Ali Caglayan, Emilio J. Gallego Arias, and Thomas
-Binetruy-Pic.
+Coq Universe is developed by Ali Caglayan and Emilio J. Gallego Arias.
 
 Feel free to stop by our [Zulip stream](https://coq.zulipchat.com/#narrow/stream/327010-Coq-Universe) to discuss about this project.
 
 ## Components
 
-Coq Universe is built using Dune, and for now, aims to include projects present
-in Coq's CI system
+Coq Universe is built using Dune, and for now, aims to include
+projects present in Coq's CI system, but we will develop a formal
+policy for our relationship with upstream soon.
 
 ## Getting started
 
