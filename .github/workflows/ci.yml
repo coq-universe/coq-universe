@@ -45,3 +45,21 @@ jobs:
 
       - name: 🌌 Coq Universe
         run: opam exec -- make universe DUNEOPT=""
+
+  nix:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: cachix/install-nix-action@v17
+
+    - name: Initialize opam 🐪
+      run: nix develop -c opam init
+
+    - name: Install 🔍 ocamlfind, 💤 zarith and 🗿 menhir
+      run: nix develop -c make install-opam-deps
+
+    - name: 🧱 Fetch submodules
+      run: nix develop -c make submodules
+
+    - name: 🌌 Coq Universe
+      run: nix develop -c opam exec -- make universe DUNEOPT=""
