@@ -46,6 +46,24 @@ make universe
 For now we require that participating projects use Dune and are already present
 in Coq's CI.
 
+Coq Universe requires that the project uses Dune Coq mode to build,
+and that builds against Coq master.
+
+### Dune roadmap
+
+In order to start porting all CI projects to Dune Universe, we'd like
+to request upstream developers to adopt Dune. Unfortunately, this is
+not possible yet, missing features are:
+
+- Dune theories can't detect other theories that are installed
+  globally; this requires a full extension
+
+- Dune setup for native compute is cumbersome, as it doesn't detect
+  the configure option. This should be easy to fix nowadays.
+
+Once these two issues are solved, I think Dune Coq mode should be
+approaching 1.0 status.
+
 ## Community and Code of Conduct
 
 Code of Conduct will be added soon. This is a community project.
