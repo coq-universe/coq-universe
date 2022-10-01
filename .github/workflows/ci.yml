@@ -11,49 +11,60 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os:
-          - macos-latest
-          - ubuntu-latest
-        ocaml-compiler:
-          - ocaml-variants.4.14.0+options,ocaml-option-flambda
         include:
-          - os: windows-latest
-            ocaml-compiler: 4.14
+        - name: Ubuntu
+          ocaml-compiler: ocaml-variants.4.14.0+options,ocaml-option-flambda
+          os: ubuntu-latest
+        - name: macOS
+          ocaml-compiler: ocaml-variants.4.14.0+options,ocaml-option-flambda
+          os: macos-latest
+        - name: Windows
+          ocaml-compiler: 4.14
+          os: windows-latest
+        - name: Nix
+          ocaml-compiler: 4.14
+          os: ubuntu-latest
+          nix: true
 
     runs-on: ${{ matrix.os }}
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v3
 
-      - name: 🐪 Use OCaml ${{ matrix.ocaml-compiler }}
-        uses: ocaml/setup-ocaml@v2
-        with:
-          ocaml-compiler: ${{ matrix.ocaml-compiler }}
-          dune-cache: true
-          opam-depext: true
+    - name: ❄️ Setup Nix
+      uses: cachix/install-nix-action@v17
+      if: ${{ matrix.nix }}
+      with:
+        nix_path: nixpkgs=channel:nixos-21.05
 
-      - name: 🐐 Install GMP
-        if: matrix.os == 'windows-latest'
-        run: opam depext conf-gmp
+    - name: 🐪 Use OCaml ${{ matrix.ocaml-compiler }}
+      uses: ocaml/setup-ocaml@v2
+      with:
+        ocaml-compiler: ${{ matrix.ocaml-compiler }}
+        dune-cache: true
+        opam-depext: true
 
-      - name: Install 🔍 ocamlfind, 💤 zarith and 🗿 menhir
-        run: make install-opam-deps
+    - name: 🐐 Install GMP
+      if: matrix.os == 'windows-latest'
+      run: opam depext conf-gmp
 
-      - name: 🧱 Fetch submodules
-        run: make submodules
+    - name: Install 🔍 ocamlfind, 💤 zarith and 🗿 menhir
+      if: ${{ ! matrix.nix }}
+      run: make install-opam-deps
 
-      - name: 🌌 Coq Universe
-        run: opam exec -- make universe DUNEOPT=""
+    - name: 🧱 Fetch submodules (opam)
+      if: ${{ ! matrix.nix }}
+      run: make submodules
 
-  nix:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    - uses: cachix/install-nix-action@v17
-
-    - name: 🧱 Fetch submodules
+    - name: 🧱 Fetch submodules (nix)
+      if: ${{ matrix.nix }}
       run: nix develop -c make submodules
 
-    - name: 🌌 Coq Universe
+    - name: 🌌 Coq Universe (opam)
+      if: ${{ ! matrix.nix }}
+      run: opam exec -- make universe DUNEOPT=""
+
+    - name: 🌌 Coq Universe (nix)
+      if: ${{ matrix.nix }}
       run: nix develop -c make universe DUNEOPT=""
