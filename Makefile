@@ -34,6 +34,9 @@ dune: $(DUNE)
 submodules:
 	git submodule update --init --recursive
 
+submodules-deinit:
+	git submodule deinit -f .
+
 clean: $(DUNE)
 	$(DUNE) clean
 	$(DUNE) clean --root dune-ocaml
