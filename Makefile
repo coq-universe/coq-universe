@@ -37,6 +37,10 @@ submodules:
 submodules-deinit:
 	git submodule deinit -f .
 
+SUBMODULES?=coq-master dune-ocaml
+submodules-init:
+	git submodule update --init $(SUBMODULES)
+
 clean: $(DUNE)
 	$(DUNE) clean
 	$(DUNE) clean --root dune-ocaml
