@@ -1,7 +1,7 @@
 [submodule "dune-ocaml"]
 	path = dune-ocaml
-	url = https://github.com/Alizter/dune.git
-	branch = coq-compose
+	url = https://github.com/ocaml/dune.git
+	branch = main
 [submodule "math-comp"]
 	path = math-comp
 	url = https://github.com/ejgallego/math-comp.git
