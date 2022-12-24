@@ -40,7 +40,7 @@
   branch = dune
 [submodule "mczify"]
 	path = mczify
-	url = https://github.com/math-comp/mczify.git
+	url = https://github.com/Alizter/mczify.git
   branch = dune
 [submodule "paramcoq"]
 	path = paramcoq
