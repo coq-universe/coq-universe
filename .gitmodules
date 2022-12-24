@@ -44,7 +44,7 @@
   branch = dune
 [submodule "paramcoq"]
 	path = paramcoq
-	url = https://github.com/ejgallego/paramcoq.git
+	url = https://github.com/coq-community/paramcoq.git
 [submodule "gaia"]
 	path = gaia
 	url = https://github.com/Alizter/gaia.git

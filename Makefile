@@ -54,6 +54,7 @@ SUBMODULES?= \
 	Coq-HoTT \
 	math-comp \
 	mczify \
+	paramcoq \
 	real-closed \
 	tarjan
 
