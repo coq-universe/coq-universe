@@ -26,10 +26,10 @@
 	path = CompCert
 	url = https://github.com/alizter/CompCert.git
 	branch = dune
-[submodule "HoTT"]
-	path = HoTT
+[submodule "Coq-HoTT"]
+	path = Coq-HoTT
 	url = https://github.com/Alizter/HoTT.git
-  branch = use-dune
+  branch = dune
 [submodule "Coq-Equations"]
 	path = Coq-Equations
 	url = https://github.com/ejgallego/Coq-Equations.git
