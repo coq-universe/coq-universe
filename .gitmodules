@@ -59,7 +59,7 @@
   branch = dune
 [submodule "real-closed"]
 	path = real-closed
-	url = https://github.com/math-comp/real-closed.git
+	url = https://github.com/Alizter/real-closed.git
   branch = dune
 [submodule "bigenough"]
 	path = bigenough
