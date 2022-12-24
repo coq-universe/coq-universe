@@ -25,7 +25,7 @@ $(DUNE):
 	cd dune-ocaml && make release
 
 # For interactive use
-DUNEOPT?=--display=short --error-reporting=twice
+DUNEOPT?=
 
 dunestrap:
 	make -C coq-master dunestrap
@@ -42,7 +42,21 @@ submodules:
 submodules-deinit:
 	git submodule deinit -f .
 
-SUBMODULES?=coq-master dune-ocaml
+SUBMODULES?= \
+	Abel \
+	bigenough \
+	CompCert \
+	Coq-Equations \
+	coq-master \
+	dune-ocaml \
+	finmap \
+	flocq \
+	Coq-HoTT \
+	math-comp \
+	mczify \
+	real-closed \
+	tarjan
+
 submodules-init:
 	git submodule update --init $(SUBMODULES)
 
