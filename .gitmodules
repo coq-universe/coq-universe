@@ -12,19 +12,19 @@
 	branch = master
 [submodule "odd-order"]
 	path = odd-order
-	url = https://github.com/ejgallego/odd-order.git
+	url = https://github.com/Alizter/odd-order.git
 	branch = dune
 [submodule "fourcolor"]
 	path = fourcolor
-	url = https://github.com/ejgallego/fourcolor.git
+	url = https://github.com/Alizter/fourcolor.git
 	branch = dune
 [submodule "flocq"]
 	path = flocq
-	url = https://github.com/alizter/flocq-fork.git
+	url = https://github.com/Alizter/flocq-fork.git
 	branch = dune
 [submodule "CompCert"]
 	path = CompCert
-	url = https://github.com/alizter/CompCert.git
+	url = https://github.com/Alizter/CompCert.git
 	branch = dune
 [submodule "Coq-HoTT"]
 	path = Coq-HoTT
@@ -32,11 +32,11 @@
   branch = dune
 [submodule "Coq-Equations"]
 	path = Coq-Equations
-	url = https://github.com/ejgallego/Coq-Equations.git
+	url = https://github.com/Alizter/Coq-Equations.git
   branch = dune
 [submodule "hydra-battles"]
 	path = hydra-battles
-	url = https://github.com/ejgallego/hydra-battles.git
+	url = https://github.com/Alizter/hydra-battles.git
   branch = dune
 [submodule "mczify"]
 	path = mczify

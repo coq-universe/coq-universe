@@ -43,20 +43,8 @@ submodules-deinit:
 	git submodule deinit -f .
 
 SUBMODULES?= \
-	Abel \
-	bigenough \
-	CompCert \
-	Coq-Equations \
 	coq-master \
 	dune-ocaml \
-	finmap \
-	flocq \
-	Coq-HoTT \
-	math-comp \
-	mczify \
-	paramcoq \
-	real-closed \
-	tarjan
 
 submodules-init:
 	git submodule update --init $(SUBMODULES)
