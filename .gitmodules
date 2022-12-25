@@ -1,38 +1,38 @@
 [submodule "dune-ocaml"]
 	path = dune-ocaml
-	url = https://github.com/Alizter/dune.git
-	branch = coq-compose
+	url = https://github.com/ocaml/dune.git
+	branch = main
 [submodule "math-comp"]
 	path = math-comp
-	url = https://github.com/ejgallego/math-comp.git
+	url = https://github.com/Alizter/math-comp.git
 	branch = dune
 [submodule "coq-master"]
 	path = coq-master
-	url = https://github.com/coq/coq.git
-	branch = master
+	url = https://github.com/Alizter/coq.git
+	branch = dune
 [submodule "odd-order"]
 	path = odd-order
-	url = https://github.com/ejgallego/odd-order.git
+	url = https://github.com/Alizter/odd-order.git
 	branch = dune
 [submodule "fourcolor"]
 	path = fourcolor
-	url = https://github.com/ejgallego/fourcolor.git
+	url = https://github.com/Alizter/fourcolor.git
 	branch = dune
 [submodule "flocq"]
 	path = flocq
-	url = https://github.com/alizter/flocq-fork.git
+	url = https://github.com/Alizter/flocq-fork.git
 	branch = dune
 [submodule "CompCert"]
 	path = CompCert
-	url = https://github.com/alizter/CompCert.git
+	url = https://github.com/Alizter/CompCert.git
 	branch = dune
-[submodule "HoTT"]
-	path = HoTT
+[submodule "Coq-HoTT"]
+	path = Coq-HoTT
 	url = https://github.com/Alizter/HoTT.git
-  branch = use-dune
+  branch = dune
 [submodule "Coq-Equations"]
 	path = Coq-Equations
-	url = https://github.com/alizter/Coq-Equations.git
+	url = https://github.com/Alizter/Coq-Equations.git
   branch = dune
 [submodule "hydra-battles"]
 	path = hydra-battles
@@ -40,11 +40,11 @@
   branch = dune
 [submodule "mczify"]
 	path = mczify
-	url = https://github.com/math-comp/mczify.git
+	url = https://github.com/Alizter/mczify.git
   branch = dune
 [submodule "paramcoq"]
 	path = paramcoq
-	url = https://github.com/Alizter/paramcoq.git
+	url = https://github.com/coq-community/paramcoq.git
 [submodule "gaia"]
 	path = gaia
 	url = https://github.com/Alizter/gaia.git
@@ -59,7 +59,7 @@
   branch = dune
 [submodule "real-closed"]
 	path = real-closed
-	url = https://github.com/math-comp/real-closed.git
+	url = https://github.com/Alizter/real-closed.git
   branch = dune
 [submodule "bigenough"]
 	path = bigenough
@@ -76,4 +76,12 @@
 [submodule "tarjan"]
 	path = tarjan
 	url = https://github.com/Alizter/tarjan.git
+  branch = dune
+[submodule "coqprime"]
+    path = coqprime
+    url = https://github.com/Alizter/coqprime.git
+  branch = dune 
+[submodule "bignums"]
+	path = bignums
+	url = https://github.com/Alizter/bignums.git
   branch = dune
