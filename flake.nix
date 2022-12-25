@@ -15,7 +15,6 @@
           ocamlPackages.findlib
           ocamlPackages.zarith
           ocamlPackages.menhir
-          ocamlPackages.lablgtk3-sourceview3
         ];
       };
     };
