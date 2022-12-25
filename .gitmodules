@@ -77,6 +77,10 @@
 	path = tarjan
 	url = https://github.com/Alizter/tarjan.git
   branch = dune
+[submodule "coqprime"]
+    path = coqprime
+    url = git@github.com:Alizter/coqprime.git
+  branch = dune 
 [submodule "bignums"]
 	path = bignums
 	url = git@github.com:Alizter/bignums.git
