@@ -8,8 +8,8 @@
 	branch = dune
 [submodule "coq-master"]
 	path = coq-master
-	url = https://github.com/ejgallego/coq.git
-	branch = master
+	url = https://github.com/Alizter/coq.git
+	branch = dune
 [submodule "odd-order"]
 	path = odd-order
 	url = https://github.com/Alizter/odd-order.git
