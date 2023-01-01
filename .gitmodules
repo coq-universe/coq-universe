@@ -28,8 +28,7 @@
 	branch = dune
 [submodule "Coq-HoTT"]
 	path = Coq-HoTT
-	url = https://github.com/Alizter/HoTT.git
-  branch = dune
+	url = https://github.com/HoTT/Coq-HoTT.git
 [submodule "Coq-Equations"]
 	path = Coq-Equations
 	url = https://github.com/Alizter/Coq-Equations.git
