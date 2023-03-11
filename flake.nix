@@ -15,6 +15,7 @@
           ocamlPackages.findlib
           ocamlPackages.zarith
           ocamlPackages.menhir
+	  opam
         ];
       };
     };
